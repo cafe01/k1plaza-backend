@@ -1,0 +1,29 @@
+.x-agenda {
+
+
+}
+
+.x-agenda-editor {
+
+    & > .x-panel-body {
+        @include box-shadow($box-shadow-inset);
+    }
+
+    // .action-link {
+    //
+    //     &::after {
+    //         display: inline-block;
+    //         font: normal normal normal 14px/1 FontAwesome;
+    //         content: "\f040";
+    //         font-size: 21px;
+    //         line-height: 29px;
+    //         margin-right: 5px;
+    //         vertical-align: -39%;
+    //         visibility: hidden;
+    //     }
+    //
+    //     &:hover::after {
+    //         visibility: visible;
+    //     }
+    // }
+}

@@ -1,0 +1,12 @@
+.x-medias-panel {
+
+    .subinfo a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+}

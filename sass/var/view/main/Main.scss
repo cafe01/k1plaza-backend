@@ -1,0 +1,40 @@
+
+
+// Ext vars
+$font-family: 'Roboto', sans-serif;
+$menu-item-font-weight: 300;
+
+// component
+$base-color: #157fcc;
+$border-layout-ct-background-color: #f2f2f2;
+
+// toolbar
+$toolbar-background-color: #f2f2f2;
+
+// panel
+$include-panel-default-framed-ui: false;
+$include-panel-light-framed-ui: false;
+$include-panel-light-ui: false;
+
+// $panel-header-font-family: 'Roboto Condensed', sans-serif;
+$panel-header-color:#fff;
+$panel-header-background-color: $base-color;
+$panel-header-glyph-color: #fff;
+// $panel-header-glyph-opacity: 0.5;
+
+// window
+$window-header-color: #333;
+
+
+// button
+$button-large-icon-size: 22px;
+$button-large-line-height: 32px;
+$button-toolbar-glyph-opacity: 0.8;
+$button-small-font-weight: 400;
+$button-medium-font-weight: 400;
+$button-large-font-weight: 400;
+
+
+// our vars
+$box-shadow: 0 -1px 0 #E5E5E5, 0 2px 4px rgba(0, 0, 0, 0.2);
+$box-shadow-inset: #333333 1px 1px 4px -2px inset;

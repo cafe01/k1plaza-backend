@@ -1,0 +1,376 @@
+
+.x-main-logo {
+    background: #282A2E url(images/logo-kreato.svg) 0 0 no-repeat;
+    background-size: 65%;
+    background-position: center;
+
+    &.delete-drop-invitation {
+
+    }
+}
+
+.x-main-menu {
+
+    background-color: #3e4752;
+
+    ::-webkit-scrollbar {
+        width: 5px;
+        opacity: 0;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #aaa;
+        border-radius: 5px;
+    }
+
+    &:hover ::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+    }
+
+    .separator {
+        margin: 10px 35px;
+        border-top: 1px solid #222;
+        border-bottom: 1px solid #555;
+    }
+
+    .menu-item {
+
+        padding: 13px 5px;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 400;
+        color: #aaa;
+
+        @include transition-duration(1s);
+
+        &:hover {
+            background-color: #373f49; //#fff;
+        }
+
+        i {
+            font-size: 22px;
+            width: 50px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        span {
+            font-size:16px;
+
+        }
+    }
+
+    .active {
+        background-color: #313841;
+        color: #fff;
+    }
+
+}
+
+
+.x-main-userpanel {
+
+    padding: 20px 0 20px;
+
+    img.avatar {
+
+        float: left;
+        width: 50px;
+
+        @include border-top-right-radius(50%);
+        @include border-bottom-right-radius(50%);
+
+        &::before {
+            content: " ";
+            border-left: 5px solid $base-color;
+        }
+    }
+
+    .info {
+        padding-top: 4px;
+        font-size: 18px;
+        line-height: 20px;
+        color: white;
+        margin-left: 60px;
+        // @include text-shadow(#333 1px 1px 0);
+    }
+
+    .subinfo {
+        font-size: 14px;
+    }
+}
+
+.x-center-panel {
+    background-color: #cecece;
+}
+
+.box-shadow {
+    @include box-shadow($box-shadow);
+    background-color: #fff;
+}
+
+.action-link .x-form-display-field {
+    font-size: 24px !important;
+    padding: 4px;
+    cursor: pointer;
+    &:hover {
+        background-color: #ddd;
+    }
+}
+
+
+
+// Meterial Design UI
+.material-grid {
+
+    .x-focus {
+        & .x-column-header-inner::before {
+            border:0 !important;
+        }
+    }
+
+    .x-column-header {
+        font-size: 13px;
+        line-height: 30px;
+    }
+
+
+    .x-grid-item {
+
+        font-size: 15px;
+        line-height: 30px;
+        border-color: rgba(0,0,0,0.065);
+        color: #000;
+        color: rgba(0,0,0, 0.87);
+
+        &:nth-child(odd) {
+            background-color: #fbfbfb;
+        }
+    }
+
+    .x-grid-item-over {
+        background-color: #eee !important;
+    }
+
+    .x-grid-item-selected {
+        color: white;
+        background-color: $base-color !important;
+        font-weight: 400;
+
+        i {
+            color: white !important;
+        }
+    }
+
+    .x-grid-item-focused {
+        color: inherit;
+        .x-grid-cell-inner::before {
+            border: 0 !important;
+        }
+    }
+
+    .badges {
+        float:right;
+        margin-left: 5px;
+        min-width: 1px;
+    }
+
+    .subinfo {
+        font-size: 12px;
+        line-height: 22px;
+        font-weight: 300;
+        color: #333;
+        color: rgba(0,0,0, 0.54);
+
+        span {
+            margin-right: 10px;
+        }
+
+        a {
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+    }
+
+    .x-grid-item-selected .subinfo {
+        color: #fff;
+    }
+
+    &.subinfo-on-select {
+        .subinfo {
+            display: none;
+        }
+
+        & .x-grid-item-selected .subinfo {
+            display: block;
+        }
+    }
+
+    &.large {
+        .x-grid-item {
+            font-size: 18px;
+            // font-weight: 400;
+            line-height: 30px;
+
+            a {
+
+            }
+        }
+    }
+}
+
+.material-header {
+    .x-panel-header {
+        background-color: $base-color;
+        color: #fff;
+
+        .x-panel-header-title-default {
+            line-height: 60px;
+
+        }
+    }
+}
+
+
+.material {
+
+    .x-tagfield {
+
+        .x-tagfield-list {
+            padding: 2px 6px 6px 2px;
+
+        }
+
+        .x-tagfield-item {
+            margin: 5px 0 0 5px;
+            padding: 2px 0px 3px 8px !important;
+            @include border-radius(0);
+        }
+
+        .x-tagfield-input-field  {
+            margin-left: 5px;
+        }
+
+        .x-tagfield-item-close {
+            top: 5px;
+            right: 3px;
+        }
+
+    }
+
+}
+
+.x-form-text-wrap {
+    display: block;
+}
+
+@include extjs-button-large-ui(
+    $ui: 'glass',
+    $padding: 3px 3px 3px 10px,
+    $body-outline-width-focus: 0px,
+    $background-color: rgba(0,0,0,0.15),
+    $background-color-over: rgba(0,0,0,0.3),
+    $border-color: #555,
+    // $border-color-over: #aaa,
+    $border-color-pressed: #777,
+    $color: #aaa,
+    $color-over: #ccc,
+    $color-pressed: #ccc,
+
+    $inner-border-width: 0,
+    $inner-border-width-focus-pressed: 0
+);
+
+@include extjs-menu-ui(
+    $ui: 'glass',
+    // $ui-background-color: rgba(0,0,0,0.9),
+    // $ui-glyph-color: #fff,
+    // $ui-text-color: #ccc,
+    $ui-item-icon-size: 20px,
+    $ui-item-font-size: 14px,
+    $ui-item-height: 32px
+);
+
+$main-panel-header-height: 80px;
+
+@include extjs-panel-ui(
+    $ui: "main-panel",
+    $ui-header-font-size: 35px,
+    $ui-header-font-weight: 400,
+    $ui-header-line-height: $main-panel-header-height,
+    $ui-header-icon-width: 55px,
+    $ui-header-icon-height: 33px,
+    $ui-body-background-color: $toolbar-background-color
+);
+
+@include extjs-panel-ui(
+    $ui: "paper",
+    $ui-border-color: #ddd
+);
+
+
+.x-panel-paper {
+    @include box-shadow($box-shadow);
+    // border-top: 1px solid #ddd;
+
+
+    .x-html-editor-tb {
+        background-color: #fff;
+    }
+
+    .x-html-editor-container {
+        border:0;
+    }
+}
+
+.delete-drag-invitation {
+    background-color: #0D47A1;
+}
+.delete-drop-invitation {
+    background-color: #B71C1C;
+}
+
+.x-panel-header {
+    @include transition-duration(100ms);
+
+    .delete-drop-zone {
+        text-align: center;
+        color: #fff;
+
+        i {
+            @include transition-duration(100ms);
+            position: relative;
+            top: $main-panel-header-height;
+            line-height: $main-panel-header-height;
+            opacity:0;
+        }
+    }
+
+    &.delete-drag-invitation {
+
+        background-color: darken($base-color, 5%);
+
+        .x-title {
+            opacity: 0.2;
+        }
+
+        .delete-drop-zone i {
+            opacity: 0.8;
+            top: 0;
+            font-size: 1.4em;
+        }
+    }
+
+    &.delete-drop-invitation {
+        background-color: darken($base-color, 10%);
+
+        .delete-drop-zone i {
+            opacity:1;
+            top:0;
+            font-size: 1.7em;
+        }
+    }
+}

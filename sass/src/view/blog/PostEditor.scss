@@ -1,0 +1,21 @@
+
+.x-blog-posteditor {
+
+    .action-link {
+
+        &::before {
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            content: "\f040";
+            font-size: 21px;
+            line-height: 29px;
+            margin-right: 5px;
+            vertical-align: -39%;
+            // visibility: hidden;
+        }
+
+        &:hover::before {
+            visibility: visible;
+        }
+    }
+}

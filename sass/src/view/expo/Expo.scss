@@ -1,0 +1,23 @@
+.x-expo {
+
+    .x-grid-item {
+
+        .btn-actions {
+            cursor: pointer;
+            float: right;
+            width: 20px;
+            height: 20px;
+            opacity: 0;
+            @include transition-duration(.15s);
+        }
+
+        &:hover .btn-actions, &.x-grid-item-selected .btn-actions {
+            opacity: 1;
+        }
+    }
+
+
+
+
+
+}
