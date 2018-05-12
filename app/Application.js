@@ -30,6 +30,7 @@ Ext.define('q1plaza.Application', {
         "Ext.form.field.Date",
         "Ext.form.field.Time",
         "Ext.form.field.Checkbox",
+        "Ext.ux.form.SearchField",
         'q1plaza.view.main.Main',
         'q1plaza.view.main.Settings',
         'q1plaza.view.agenda.Agenda',
